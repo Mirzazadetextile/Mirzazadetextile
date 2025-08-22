@@ -3,149 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MirzazadeTextile</title>
+  <title>Mirzazade Textiles</title>
   <style>
     body {
-      font-family: "Tahoma", sans-serif;
-      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      text-align: center;
       margin: 0;
       padding: 0;
-      color: #333;
     }
 
     header {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background: #f5f5f5;
       padding: 20px;
-      background: #ffffff;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
-    header img {
-      width: 120px; /* لوگو بزرگتر شد */
-      height: auto;
-      border-radius: 10px;
-    }
-
-    h1 {
-      font-size: 28px;
-      font-weight: bold;
-      font-family: "Segoe UI", Arial, sans-serif;
-      color: #222;
-      margin-left: 20px;
-    }
-
-    section {
-      padding: 30px;
-      margin: 20px;
-      background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
-
-    section h2 {
-      font-size: 22px;
-      color: #2c3e50;
-      margin-bottom: 15px;
-    }
-
-    .cta-button {
-      display: inline-block;
-      padding: 12px 25px;
-      background-color: #27ae60;
-      color: #fff;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: background 0.3s ease;
-    }
-    .cta-button:hover {
-      background-color: #219150;
-    }
-
-    /* واتساپ شناور */
-    .whatsapp-float {
-      position: fixed;
-      width: 60px;
-      height: 60px;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25d366;
-      color: #fff;
-      border-radius: 50%;
-      text-align: center;
-      font-size: 30px;
-      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-      z-index: 100;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .whatsapp-float:hover {
-      background-color: #1ebe5c;
+    header h1 {
+      margin: 0;
+      font-size: 24px;
     }
 
     .contact-box {
-      background: #f0f9f4;
-      padding: 20px;
-      border-radius: 16px;
-      text-align: center;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+      margin: 20px;
       font-size: 18px;
+      font-weight: bold;
+    }
+
+    .contact-box a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    /* واتساپ شناور سمت چپ */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      z-index: 1000;
+    }
+    .whatsapp-float img {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease-in-out;
+    }
+    .whatsapp-float img:hover {
+      transform: scale(1.1);
     }
   </style>
 </head>
 <body>
 
-  <!-- هدر -->
   <header>
-    <img src="logo.png" alt="MirzazadeTextile Logo">
-    <h1>MirzazadeTextile</h1>
+    <h1>Mirzazade Textiles</h1>
+    <p>عرضه کننده انواع پارچه و ملزومات نساجی</p>
   </header>
 
-  <!-- معرفی برند -->
-  <section>
-    <p>
-      MirzazadeTextile با اتکا به تجربه‌ خود در حوزه نساجی، به‌صورت تخصصی در زمینه‌ی فروش انواع ملحفه‌های طرح‌دار و ساده فعالیت می‌کند.
-    </p>
-    <p>
-      تمرکز ما بر ارائه‌ی پارچه‌هایی است که از لحاظ کیفیت نخ، ثبات رنگ و سلامت بافت، مورد تأیید مشتریان و متخصصان حوزه نساجی قرار گیرد.
-    </p>
-    <p>
-      ما با ارائه‌ی قیمت‌های رقابتی و حذف واسطه‌ها، امکان خرید با بهترین قیمت را برای مشتریان خود فراهم کرده‌ایم. 
-      تمامی اجناس و طرح های موجود و جدید، به‌صورت روزانه در کانال تلگرام معرفی می‌شوند.
-    </p>
-  </section>
-
-  <!-- چرا MirzazadeTextile -->
-  <section>
-    <h2>چرا MirzazadeTextile؟</h2>
-    <ul>
-      <li>کیفیت تضمینی پارچه</li>
-      <li>قیمت گذاری منصفانه</li>
-      <li>طیف وسیع پارچه</li>
-      <li>ارائه طرح‌های به‌روز</li>
-      <li>ارتباط سریع و آسان برای ثبت سفارش</li>
-    </ul>
-  </section>
-
-  <!-- محصولات -->
-  <section>
-    <h2>مشاهده محصولات</h2>
-    <a href="https://t.me/YourTelegramChannel" class="cta-button">مشاهده در تلگرام</a>
-  </section>
-
-  <!-- شماره تماس -->
-  <section class="contact-box">
-    <h2>📞 شماره تماس</h2>
-    <p>0935-339-8323</p>
-  </section>
+  <!-- شماره تماس لینک دار -->
+  <div class="contact-box">
+    📞 <a href="tel:+989353398323">0935 339 8323</a>
+  </div>
 
   <!-- واتساپ شناور -->
   <a href="https://wa.me/989353398323" class="whatsapp-float" target="_blank">
-    💬
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
   </a>
 
 </body>
