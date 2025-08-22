@@ -1,73 +1,213 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mirzazade Textiles</title>
+  <title>Mirzazade Textile</title>
+  <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
+      font-family: 'Vazir', 'Tahoma', sans-serif;
       margin: 0;
       padding: 0;
+      background: linear-gradient(to bottom, #e3f2fd, #f3e5f5);
+      color: #333;
+      text-align: center;
+      position: relative;
     }
 
-    header {
-      background: #f5f5f5;
+    .logo {
+      margin-top: 30px;
+    }
+
+    .logo img {
+      width: 240px;
+      border-radius: 20px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .title {
+      font-family: 'Poppins', sans-serif;
+      font-size: 44px;
+      font-weight: 600;
+      margin: 20px 0;
+      color: #4f5bd5;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      margin-bottom: 10px;
+      padding: 0 20px;
+    }
+
+    .subsubtitle {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .iran-tag {
+      font-size: 16px;
+      color: #444;
+      margin-bottom: 25px;
+    }
+
+    .section {
+      background: #ffffff;
+      margin: 20px;
       padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     }
 
-    header h1 {
-      margin: 0;
+    .section ul {
+      list-style: none;
+      padding: 0;
+      text-align: right;
+    }
+
+    .section ul li {
+      margin: 10px 0;
+      font-size: 18px;
+      position: relative;
+      padding-right: 20px;
+    }
+
+    .section ul li::before {
+      content: "•";
+      position: absolute;
+      right: 0;
+      color: #7e57c2;
       font-size: 24px;
+      top: -2px;
+    }
+
+    .button {
+      display: block;
+      width: 80%;
+      margin: 10px auto;
+      padding: 15px;
+      border: none;
+      border-radius: 12px;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.3s;
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+    }
+
+    .telegram {
+      background-color: #0088cc;
     }
 
     .contact-box {
-      margin: 20px;
-      font-size: 18px;
+      background: linear-gradient(135deg, #4f5bd5, #7e57c2);
+      color: white;
+      padding: 20px;
+      margin: 25px auto;
+      width: 85%;
+      max-width: 400px;
+      border-radius: 20px;
+      font-size: 20px;
       font-weight: bold;
+      font-family: 'Tahoma', sans-serif;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
 
     .contact-box a {
-      text-decoration: none;
-      color: #000;
+      color: #fff;
+      text-decoration: underline;
     }
 
-    /* واتساپ شناور سمت چپ */
+    .address-box {
+      background-color: #fff;
+      padding: 15px;
+      margin: 20px;
+      border-radius: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      font-size: 18px;
+    }
+
     .whatsapp-float {
       position: fixed;
       bottom: 20px;
       left: 20px;
-      z-index: 1000;
-    }
-    .whatsapp-float img {
-      width: 55px;
-      height: 55px;
+      background-color: #25D366;
+      color: white;
       border-radius: 50%;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      transition: transform 0.2s ease-in-out;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      z-index: 999;
+      transition: transform 0.3s;
     }
-    .whatsapp-float img:hover {
+
+    .whatsapp-float:hover {
       transform: scale(1.1);
+    }
+
+    .whatsapp-float img {
+      width: 30px;
+      height: 30px;
+    }
+
+    @media (max-width: 600px) {
+      .title { font-size: 32px; }
+      .subtitle, .subsubtitle { font-size: 16px; }
+      .button { font-size: 16px; padding: 12px; }
+      .logo img { width: 180px; }
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>Mirzazade Textiles</h1>
-    <p>عرضه کننده انواع پارچه و ملزومات نساجی</p>
-  </header>
-
-  <!-- شماره تماس لینک دار -->
-  <div class="contact-box">
-    📞 <a href="tel:+989353398323">0935 339 8323</a>
+  <div class="logo">
+    <img src="logo.png" alt="Mirzazade Textile Logo">
   </div>
 
-  <!-- واتساپ شناور -->
-  <a href="https://wa.me/989353398323" class="whatsapp-float" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
-  </a>
+  <h1 class="title">Mirzazade Textile</h1>
+  <div class="subtitle">فروش و پخش عمده انواع پارچه ملحفه</div>
+  <div class="subsubtitle">«روتختی، روبالشتی، هتلی، ژاکارد و ...»</div>
+  <div class="iran-tag">📍 ارسال به سراسر ایران 📍</div>
 
-</body>
-</html>
+  <div class="section">
+    <p>MirzazadeTextile با اتکا به تجربه‌ خود در حوزه نساجی، به‌صورت تخصصی در زمینه‌ی فروش انواع ملحفه‌های طرح‌دار و ساده فعالیت می‌کند.</p>
+    <p>تمرکز ما بر ارائه‌ی پارچه‌هایی است که از لحاظ کیفیت نخ، ثبات رنگ و سلامت بافت، مورد تأیید مشتریان و متخصصان حوزه نساجی قرار گیرد.</p>
+    <p>ما با ارائه‌ی قیمت‌های رقابتی و حذف واسطه‌ها، امکان خرید با بهترین قیمت را برای مشتریان خود فراهم کرده‌ایم. تمامی اجناس و طرح های موجود و جدید ، به‌صورت روزانه در کانال تلگرام معرفی می‌شوند.</p>
+  </div>
+
+  <div class="section">
+    <h2>چرا MirzazadeTextile؟</h2>
+    <ul>
+      <li>کیفیت تضمینی پارچه</li>
+      <li>قیمت گذاری منصفانه</li>
+      <li>طیف وسیع پارچه</li>
+      <li>ارائه طرح‌های به‌روز</li>
+      <li>ارتباط سریع و آسان برای ثبت سفارش</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>مشاهده محصولات و ثبت سفارش:</h3>
+    <a class="button telegram" href="https://t.me/MirzazadeTextile" target="_blank">کانال تلگرام ما</a>
+  </div>
+
+  <div class="contact-box">
+    📞 شماره تماس:  
+    <br><a href="tel:+989353398323">+989353398323</a>
+  </div>
+
+  <div class="address-box">
+    آدرس: تهران، بازار بزرگ، عباس‌آباد، پشت مسجد ملک، سرای سلیمانی
+  </div>
+
+  <!-- آیکون شناور واتساپ -->
+  <a href="https://wa.me/989353398323" class="whatsapp-float" target="_blank">
+    [43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/Pardis-K/Doctor-Appointment/tree/5da8f6d7847dc7b98f9bbdd1ba83a09a1c39c8ef/views%2Flayout%2Fdoctor.blade.php?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "1")<img src="https://upload.wikimedia.org/wikipedia/commons
