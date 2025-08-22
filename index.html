@@ -1,177 +1,152 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mirzazade Textile</title>
+  <title>MirzazadeTextile</title>
   <style>
     body {
-      font-family: 'Vazir', 'Tahoma', sans-serif;
+      font-family: "Tahoma", sans-serif;
+      background-color: #f9f9f9;
       margin: 0;
       padding: 0;
-      background: linear-gradient(#e0eafc, #cfdef3);
       color: #333;
-      text-align: center;
     }
 
-    .logo {
-      margin-top: 30px;
-    }
-
-    .logo img {
-      width: 180px;
-      border-radius: 20px;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .title {
-      font-size: 42px;
-      font-weight: bold;
-      margin: 20px 0;
-      background: linear-gradient(90deg, #4f5bd5, #962fbf, #d62976);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .subtitle {
-      font-size: 20px;
-      margin-bottom: 10px;
-      padding: 0 20px;
-    }
-
-    .subsubtitle {
-      font-size: 18px;
-      color: #555;
-      margin-bottom: 10px;
-    }
-
-    .iran-tag {
-      font-size: 16px;
-      color: #444;
-      margin-bottom: 25px;
-    }
-
-    .section {
-      background: #ffffff;
-      margin: 20px;
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: 20px;
-      border-radius: 20px;
-      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      background: #ffffff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
-    .section ul {
-      list-style: none;
-      padding: 0;
-      text-align: right;
+    header img {
+      width: 120px; /* لوگو بزرگتر شد */
+      height: auto;
+      border-radius: 10px;
     }
 
-    .section ul li {
-      margin: 10px 0;
-      font-size: 18px;
-      position: relative;
-      padding-right: 20px;
-    }
-
-    .section ul li::before {
-      content: "•";
-      position: absolute;
-      right: 0;
-      color: #4f5bd5;
-      font-size: 24px;
-      top: -2px;
-    }
-
-    .button {
-      display: block;
-      width: 80%;
-      margin: 10px auto;
-      padding: 15px;
-      border: none;
-      border-radius: 12px;
-      color: white;
-      font-size: 18px;
+    h1 {
+      font-size: 28px;
       font-weight: bold;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: #222;
+      margin-left: 20px;
+    }
+
+    section {
+      padding: 30px;
+      margin: 20px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    section h2 {
+      font-size: 22px;
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #27ae60;
+      color: #fff;
+      border-radius: 10px;
       text-decoration: none;
-      transition: transform 0.3s;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: background 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #219150;
     }
 
-    .button:hover {
-      transform: scale(1.05);
+    /* واتساپ شناور */
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-
-    .telegram {
-      background-color: #0088cc;
-    }
-
-    .instagram {
-      background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    .whatsapp-float:hover {
+      background-color: #1ebe5c;
     }
 
     .contact-box {
-      background-color: #4f5bd5;
-      color: white;
-      padding: 15px 10px;
-      margin: 25px auto;
-      width: 85%;
-      max-width: 400px;
-      border-radius: 20px;
-      font-size: 20px;
-      font-weight: bold;
-      font-family: 'Tahoma', sans-serif;
-    }
-
-    .address-box {
-      background-color: #fff;
-      padding: 15px;
-      margin: 20px;
-      border-radius: 15px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      background: #f0f9f4;
+      padding: 20px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
       font-size: 18px;
     }
-
   </style>
 </head>
 <body>
 
-  <div class="logo">
-    <img src="logo.png" alt="Mirzazade Textile Logo">
-  </div>
+  <!-- هدر -->
+  <header>
+    <img src="logo.png" alt="MirzazadeTextile Logo">
+    <h1>MirzazadeTextile</h1>
+  </header>
 
-  <h1 class="title">Mirzazade Textile</h1>
+  <!-- معرفی برند -->
+  <section>
+    <p>
+      MirzazadeTextile با اتکا به تجربه‌ خود در حوزه نساجی، به‌صورت تخصصی در زمینه‌ی فروش انواع ملحفه‌های طرح‌دار و ساده فعالیت می‌کند.
+    </p>
+    <p>
+      تمرکز ما بر ارائه‌ی پارچه‌هایی است که از لحاظ کیفیت نخ، ثبات رنگ و سلامت بافت، مورد تأیید مشتریان و متخصصان حوزه نساجی قرار گیرد.
+    </p>
+    <p>
+      ما با ارائه‌ی قیمت‌های رقابتی و حذف واسطه‌ها، امکان خرید با بهترین قیمت را برای مشتریان خود فراهم کرده‌ایم. 
+      تمامی اجناس و طرح های موجود و جدید، به‌صورت روزانه در کانال تلگرام معرفی می‌شوند.
+    </p>
+  </section>
 
-  <div class="subtitle">فروش و پخش عمده انواع پارچه ملحفه</div>
-  <div class="subsubtitle">«روتختی، روبالشتی، هتلی، ژاکارد و ...»</div>
-  <div class="iran-tag">📍 ارسال به سراسر ایران 📍</div>
-
-  <div class="section">
-    <p>MirzazadeTextile با پشتوانه‌ی تجربه‌ی چندین ساله در بازار پارچه‌ی تهران، به‌صورت تخصصی در زمینه‌ی فروش انواع ملحفه‌های طرح‌دار و ساده فعالیت می‌کند.</p>
-    <p>تمرکز ما بر ارائه‌ی پارچه‌هایی است که از لحاظ کیفیت نخ، ثبات رنگ و سلامت بافت، مورد تأیید حرفه‌ای‌های حوزه‌ی نساجی و تولیدی‌هاست.</p>
-    <p>ما با ارائه‌ی قیمت‌های رقابتی و حذف واسطه‌ها، امکان خرید عمده‌ی نقدی را برای مشتریان خود فراهم کرده‌ایم. تمامی اجناس موجود به‌صورت شفاف و روزانه در کانال تلگرام، پیج اینستاگرام و گروه واتساپ معرفی می‌شوند.</p>
-  </div>
-
-  <div class="section">
+  <!-- چرا MirzazadeTextile -->
+  <section>
     <h2>چرا MirzazadeTextile؟</h2>
     <ul>
-      <li>فروش مستقیم و قیمت کف بازار تهران</li>
-      <li>کیفیت تضمین‌شده در نخ و رنگ</li>
-      <li>معرفی کامل اجناس بدون نیاز به ارسال نمونه</li>
+      <li>کیفیت تضمینی پارچه</li>
+      <li>قیمت گذاری منصفانه</li>
+      <li>طیف وسیع پارچه</li>
+      <li>ارائه طرح‌های به‌روز</li>
       <li>ارتباط سریع و آسان برای ثبت سفارش</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="section">
-    <h3>مشاهده محصولات و ثبت سفارش:</h3>
-    <a class="button telegram" href="https://t.me/MirzazadeTextile" target="_blank">کانال تلگرام ما</a>
-    <a class="button instagram" href="https://instagram.com/mirzazade_textile" target="_blank">پیج اینستاگرام ما</a>
-  </div>
+  <!-- محصولات -->
+  <section>
+    <h2>مشاهده محصولات</h2>
+    <a href="https://t.me/YourTelegramChannel" class="cta-button">مشاهده در تلگرام</a>
+  </section>
 
-  <div class="contact-box">
-    شماره تماس: <br> <a href="tel:+989353398323" style="color: white; text-decoration: none;">+989353398323</a>
-  </div>
+  <!-- شماره تماس -->
+  <section class="contact-box">
+    <h2>📞 شماره تماس</h2>
+    <p>0935-339-8323</p>
+  </section>
 
-  <div class="address-box">
-    آدرس: تهران، بازار بزرگ، عباس‌آباد، پشت مسجد ملک، سرای سلیمانی
-  </div>
+  <!-- واتساپ شناور -->
+  <a href="https://wa.me/989353398323" class="whatsapp-float" target="_blank">
+    💬
+  </a>
 
 </body>
 </html>
